@@ -1,0 +1,77 @@
+{
+  "UJK": {
+    "title": "O'zbekiston Respublikasining Uy-joy kodeksi",
+    "lex_id": "lex:MOCK-UJK",
+    "url": "TODO"
+  },
+  "SHIRKAT": {
+    "title": "\"Xususiy uy-joy mulkdorlarining shirkatlari to'g'risida\"gi Qonun",
+    "lex_id": "lex:MOCK-SHIRKAT",
+    "url": "TODO"
+  },
+  "KKUB": {
+    "title": "Ko'p kvartirali uylarni boshqarish bo'yicha qonun hujjati (nomi va amaldaligi lex.uz da aniqlansin)",
+    "lex_id": "lex:MOCK-KKUB",
+    "url": "TODO"
+  },
+  "KOMMUNAL_QOIDA": {
+    "title": "Kommunal xizmatlardan foydalanish / ko'rsatish qoidalari (VM qarori, aniqlansin)",
+    "lex_id": "lex:MOCK-KOMMUNAL_QOIDA",
+    "url": "TODO"
+  },
+  "SUV": {
+    "title": "Ichimlik suvi ta'minoti va oqova suv bo'yicha qonun hujjati (aniqlansin)",
+    "lex_id": "lex:MOCK-SUV",
+    "url": "TODO"
+  },
+  "ISSIQLIK": {
+    "title": "Issiqlik ta'minoti bo'yicha qonun hujjati / qoidalar (aniqlansin)",
+    "lex_id": "lex:MOCK-ISSIQLIK",
+    "url": "TODO"
+  },
+  "GAZ": {
+    "title": "Gaz ta'minoti bo'yicha qoidalar (aniqlansin)",
+    "lex_id": "lex:MOCK-GAZ",
+    "url": "TODO"
+  },
+  "ELEKTR": {
+    "title": "\"Elektr energetikasi to'g'risida\"gi Qonun",
+    "lex_id": "lex:MOCK-ELEKTR",
+    "url": "TODO"
+  },
+  "FK": {
+    "title": "O'zbekiston Respublikasining Fuqarolik kodeksi",
+    "lex_id": "lex:MOCK-FK",
+    "url": "TODO"
+  },
+  "FPK": {
+    "title": "O'zbekiston Respublikasining Fuqarolik protsessual kodeksi",
+    "lex_id": "lex:MOCK-FPK",
+    "url": "TODO"
+  },
+  "MJTK": {
+    "title": "Ma'muriy javobgarlik to'g'risidagi kodeks",
+    "lex_id": "lex:MOCK-MJTK",
+    "url": "TODO"
+  },
+  "OILA": {
+    "title": "O'zbekiston Respublikasining Oila kodeksi",
+    "lex_id": "lex:MOCK-OILA",
+    "url": "TODO"
+  },
+  "YER": {
+    "title": "O'zbekiston Respublikasining Yer kodeksi",
+    "lex_id": "lex:MOCK-YER",
+    "url": "TODO"
+  },
+  "SK": {
+    "title": "O'zbekiston Respublikasining Soliq kodeksi",
+    "lex_id": "lex:MOCK-SK",
+    "url": "TODO"
+  },
+  "MUROJAAT": {
+    "title": "\"Jismoniy va yuridik shaxslarning murojaatlari to'g'risida\"gi Qonun",
+    "lex_id": "lex:MOCK-MUROJAAT",
+    "url": "TODO"
+  }
+}

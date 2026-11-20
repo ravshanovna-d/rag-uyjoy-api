@@ -1,0 +1,101 @@
+id,batch,category,language,question,expected_answer,expected_doc_key,expected_doc_id,expected_article,answerable,verified
+q001,b01,faktik,uz-Latn,Uy-joy fondi qanday turlarga bo'linadi?,,UJK,,,true,false
+q002,b01,raqamlar,uz-Latn,Shirkat umumiy yig'ilishi a'zolarning necha foizi ishtirok etganda vakolatli hisoblanadi?,,SHIRKAT,,,true,false
+q003,b01,kop_modda,uz-Latn,Kvartira sotilganda umumiy mulkdagi ulush va shirkatdagi a'zolik nima bo'ladi?,,FK|SHIRKAT,,,true,false
+q004,b01,faktik,uz-Latn,Ko'p kvartirali uyda umumiy mulkka nimalar kiradi?,,UJK,,,true,false
+q005,b01,ozgargan,uz-Latn,Amaldagi tahrirga ko'ra boshqaruvchi tashkilot faoliyati uchun litsenziya talab qilinadimi?,,KKUB,,,true,false
+q006,b01,til,ru,Кто несёт расходы на содержание общего имущества многоквартирного дома?,,UJK,,,true,false
+q007,b01,javobsiz,uz-Latn,Toshkentda 2030-yilda kvartira narxi qancha bo'ladi?,NO_ANSWER,,,,false,true
+q008,b01,faktik,uz-Latn,Xususiy uy-joy mulkdorlari shirkati qanday tashkil etiladi?,,SHIRKAT,,,true,false
+q009,b01,faktik,uz-Latn,Shirkat a'zolarining umumiy yig'ilishi qaysi masalalarni hal qiladi?,,SHIRKAT,,,true,false
+q010,b01,raqamlar,uz-Latn,Kommunal to'lovlar kechiktirilganda penya miqdori qancha?,,KOMMUNAL_QOIDA,,,true,false
+q011,b02,kop_modda,uz-Latn,"Ijarachi kommunal to'lovlarni to'lamasa, qarz uchun mulkdor javobgar bo'ladimi?",,FK|KOMMUNAL_QOIDA,,,true,false
+q012,b02,noaniq,uz-Latn,"tepadagi qo'shni suv oqizyapti, nima qilay?",,FK,,,true,false
+q013,b02,faktik,uz-Latn,Turar joyni ijaraga berish shartnomasi qanday shaklda tuziladi?,,FK,,,true,false
+q014,b02,ozgargan,uz-Latn,Hozirgi tartibda kommunal xizmatlar tariflarini qaysi organ belgilaydi?,,KOMMUNAL_QOIDA,,,true,false
+q015,b02,til,ru,Может ли поставщик отключить воду за долги без предварительного уведомления?,,KOMMUNAL_QOIDA,,,true,false
+q016,b02,javobsiz,uz-Latn,Qaysi boshqaruvchi kompaniya eng yaxshisi?,NO_ANSWER,,,,false,true
+q017,b02,faktik,uz-Latn,Turar joyni noturar joyga o'tkazish uchun qaysi organga murojaat qilinadi?,,UJK,,,true,false
+q018,b02,raqamlar,uz-Latn,Turar joy ijarasi shartnomasi eng ko'pi bilan necha yilga tuzilishi mumkin?,,FK,,,true,false
+q019,b02,kop_modda,uz-Latn,Yuqori qavatdagi qo'shni kvartirani suv bosganda zarar kimdan undiriladi va boshqaruvchi tashkilot javobgarmi?,,FK|KKUB,,,true,false
+q020,b02,faktik,uz-Latn,Kvartirani qayta rejalashtirish (pereplanirovka) uchun kimning ruxsati kerak?,,UJK,,,true,false
+q021,b03,faktik,uz-Latn,Uy-joy mulkdori umumiy mulkni saqlash xarajatlarida qanday ishtirok etadi?,,SHIRKAT,,,true,false
+q022,b03,raqamlar,uz-Latn,Kommunal xizmatlar haqini to'lamaganlik uchun ma'muriy jarima BHMning necha baravari?,,MJTK,,,true,false
+q023,b03,kop_modda,uz-Latn,Boshqaruvchi tashkilot bilan shartnoma qanday tuziladi va qanday bekor qilinadi?,,KKUB|FK,,,true,false
+q024,b03,faktik,uz-Latn,Ko'p kvartirali uy uchun boshqaruvchi tashkilotni kim tanlaydi?,,KKUB,,,true,false
+q025,b03,ozgargan,uz-Latn,Davlat uy-joy fondidagi turar joyni xususiylashtirish hozir qanday tartibda amalga oshiriladi?,,UJK,,,true,false
+q026,b03,til,ru,Каков порядок согласования перепланировки квартиры?,,UJK,,,true,false
+q027,b03,javobsiz,uz-Latn,Uy-joy kodeksining 999-moddasida nima deyilgan?,NO_ANSWER,,,,false,true
+q028,b03,faktik,uz-Latn,Ko'p kvartirali uyni boshqarishning qanday usullari mavjud?,,KKUB,,,true,false
+q029,b03,faktik,uz-Latn,Shirkat boshqaruvi raisi qanday tartibda saylanadi?,,SHIRKAT,,,true,false
+q030,b03,raqamlar,uz-Latn,Turar joyni ruxsatsiz qayta rejalashtirganlik uchun jarima miqdori qancha?,,MJTK,,,true,false
+q031,b04,kop_modda,uz-Latn,Kvartirani meros qilib olganda avvalgi egasining kommunal qarzlari merosxo'rga o'tadimi?,,FK|KOMMUNAL_QOIDA,,,true,false
+q032,b04,noaniq,uz-Latn,"svet o'chib qoldi, muzlatkich buzildi, pulini qaytarishadimi",,ELEKTR,,,true,false
+q033,b04,faktik,uz-Latn,Uy-joy mulkdori qanday huquqlarga ega?,,UJK,,,true,false
+q034,b04,ozgargan,uz-Latn,Turar joyni noturar joyga o'tkazish tartibi Uy-joy kodeksining amaldagi tahririda qanday?,,UJK,,,true,false
+q035,b04,til,ru,Какие права имеет член товарищества частных собственников жилья?,,SHIRKAT,,,true,false
+q036,b04,javobsiz,uz-Latn,Kvartira devorini qaysi rangga bo'yash qonun bilan majburiy?,NO_ANSWER,,,,false,true
+q037,b04,faktik,uz-Latn,Uy-joy mulkdorining asosiy majburiyatlari nimalardan iborat?,,UJK,,,true,false
+q038,b04,raqamlar,uz-Latn,Suv ta'minoti tarmog'iga o'zboshimchalik bilan ulanganlik uchun jarima BHMning necha baravari?,,MJTK,,,true,false
+q039,b04,kop_modda,uz-Latn,Noturar joyga o'tkazilgan kvartira egasi umumiy mulk xarajatlarida qanday ishtirok etadi?,,UJK|SHIRKAT,,,true,false
+q040,b04,faktik,uz-Latn,Ijarachi turar joyni boshqa shaxsga qayta ijaraga (subijaraga) bera oladimi?,,FK,,,true,false
+q041,b05,faktik,uz-Latn,Mulkdorning oila a'zolari turar joydan qanday huquqlar asosida foydalanadi?,,UJK,,,true,false
+q042,b05,raqamlar,uz-Latn,Elektr energiyasidan hisobga olmasdan foydalanganlik uchun jarima miqdori qancha?,,MJTK,,,true,false
+q043,b05,kop_modda,uz-Latn,"Ruxsatsiz qayta rejalashtirish aniqlansa, qanday choralar ko'riladi: jarima va avvalgi holatga keltirish?",,UJK|MJTK,,,true,false
+q044,b05,faktik,uz-Latn,Kommunal xizmatlar iste'molchisi qanday huquqlarga ega?,,KOMMUNAL_QOIDA,,,true,false
+q045,b05,ozgargan,uz-Latn,Kommunal to'lovlarni faqat naqd pulsiz to'lash majburiymi?,,KOMMUNAL_QOIDA,,,true,false
+q046,b05,til,ru,Кто отвечает за капитальный ремонт крыши многоквартирного дома?,,SHIRKAT,,,true,false
+q047,b05,javobsiz,uz-Latn,Germaniyada ijara haqi qanday tartibga solinadi?,NO_ANSWER,,,,false,true
+q048,b05,faktik,uz-Latn,Kommunal xizmat ko'rsatuvchi tashkilotning majburiyatlari qanday?,,KOMMUNAL_QOIDA,,,true,false
+q049,b05,faktik,uz-Latn,Kvartiraga suv hisoblagichini o'rnatish kimning zimmasida?,,KOMMUNAL_QOIDA,,,true,false
+q050,b05,raqamlar,uz-Latn,Tabiiy gazdan noqonuniy foydalanganlik uchun jismoniy shaxsga qancha jarima solinadi?,,MJTK,,,true,false
+q051,b06,kop_modda,uz-Latn,Hisoblagich bo'lmasa suv uchun to'lov qanday hisoblanadi va hisoblagich o'rnatish majburiyati kimda?,,KOMMUNAL_QOIDA|SUV,,,true,false
+q052,b06,noaniq,uz-Latn,uyimni do'konga aylantirsam bo'ladimi,,UJK,,,true,false
+q053,b06,faktik,uz-Latn,"Kommunal xizmat sifatsiz ko'rsatilsa, iste'molchi qanday talab qo'yishi mumkin?",,KOMMUNAL_QOIDA,,,true,false
+q054,b06,ozgargan,uz-Latn,Turar joyni ijaraga berish shartnomasini soliq organida ro'yxatdan o'tkazish hozir majburiymi?,,SK,,,true,false
+q055,b06,til,uz-Cyrl,Кўп квартирали уйда умумий мулкка нималар киради?,,UJK,,,true,false
+q056,b06,javobsiz,uz-Latn,Shirkat raisi qaysi futbol jamoasini qo'llab-quvvatlashi kerak?,NO_ANSWER,,,,false,true
+q057,b06,faktik,uz-Latn,Kommunal to'lovlar to'lanmaganda xizmatni to'xtatish qanday tartibda amalga oshiriladi?,,KOMMUNAL_QOIDA,,,true,false
+q058,b06,raqamlar,uz-Latn,Qarz uchun kommunal xizmatni to'xtatishdan necha kun oldin iste'molchi ogohlantirilishi kerak?,,KOMMUNAL_QOIDA,,,true,false
+q059,b06,kop_modda,uz-Latn,Shirkat raisi qanday huquqlarga ega va mol-mulkka yetkazilgan zarar uchun qanday javobgar bo'ladi?,,SHIRKAT|FK,,,true,false
+q060,b06,faktik,uz-Latn,Ko'p kvartirali uy tomini kapital ta'mirlash kimning hisobidan amalga oshiriladi?,,SHIRKAT,,,true,false
+q061,b07,faktik,uz-Latn,Mulkdorning umumiy mulkdagi ulushi qanday aniqlanadi?,,UJK,,,true,false
+q062,b07,raqamlar,uz-Latn,Rejali ta'mirlashda ichimlik suvi necha soatdan ortiq uzilmasligi kerak?,,SUV,,,true,false
+q063,b07,kop_modda,uz-Latn,"Uy davlat ehtiyojlari uchun buzilsa, mulkdorga qanday kompensatsiya beriladi?",,YER|FK,,,true,false
+q064,b07,faktik,uz-Latn,Yerto'la va chordoqdan foydalanish to'g'risidagi qaror qanday qabul qilinadi?,,SHIRKAT,,,true,false
+q065,b07,ozgargan,uz-Latn,Gaz hisoblagichini almashtirish xarajatlarini hozir kim qoplaydi?,,GAZ,,,true,false
+q066,b07,til,uz-Cyrl,Ширкат аъзоларининг умумий йиғилиши қандай чақирилади?,,SHIRKAT,,,true,false
+q067,b07,javobsiz,uz-Latn,Qaysi bank kvartira uchun eng arzon ipoteka beradi?,NO_ANSWER,,,,false,true
+q068,b07,faktik,uz-Latn,Turar joyni xususiylashtirish deganda nima tushuniladi?,,UJK,,,true,false
+q069,b07,faktik,uz-Latn,Uy-joyga bo'lgan mulk huquqi qachondan vujudga keladi?,,FK,,,true,false
+q070,b07,raqamlar,uz-Latn,Isitish mavsumida turar joydagi harorat kamida necha daraja bo'lishi kerak?,,ISSIQLIK,,,true,false
+q071,b08,kop_modda,uz-Latn,"Joriy ta'mir ijarachining, kapital ta'mir esa ijaraga beruvchining zimmasidami?",,FK|UJK,,,true,false
+q072,b08,noaniq,uz-Latn,"shirkat har oy pul yig'yapti, bermasam bo'ladimi",,SHIRKAT,,,true,false
+q073,b08,faktik,uz-Latn,Kvartira oldi-sotdi shartnomasi notarial tasdiqlanishi shartmi?,,FK,,,true,false
+q074,b08,ozgargan,uz-Latn,Ijtimoiy normadan ortiq elektr energiyasi iste'moli uchun alohida tarif amaldami?,,ELEKTR,,,true,false
+q075,b08,til,uz-Cyrl,Коммунал хизматлар учун тўловни ким тўлаши керак — мулкдорми ёки ижарачи?,,KOMMUNAL_QOIDA,,,true,false
+q076,b08,javobsiz,uz-Latn,2031-yilda elektr energiyasi tarifi qancha bo'ladi?,NO_ANSWER,,,,false,true
+q077,b08,faktik,uz-Latn,Turar joy ijarasi shartnomasini muddatidan oldin bekor qilish asoslari qanday?,,FK,,,true,false
+q078,b08,raqamlar,uz-Latn,Kommunal xizmatlar uchun oylik to'lov har oyning nechanchi sanasigacha amalga oshiriladi?,,KOMMUNAL_QOIDA,,,true,false
+q079,b08,kop_modda,uz-Latn,"Elektr kuchlanishi o'zgarib maishiy texnika buzilsa, zararni kim qoplaydi?",,ELEKTR|FK,,,true,false
+q080,b08,faktik,uz-Latn,Qanday hollarda fuqaro turar joydan sud tartibida chiqarib yuboriladi?,,UJK,,,true,false
+q081,b09,faktik,uz-Latn,Mulkdor shirkat aʼzoligidan chiqishi mumkinmi?,,SHIRKAT,,,true,false
+q082,b09,raqamlar,uz-Latn,Shirkat umumiy yig'ilishida kapital ta'mir to'g'risidagi qaror necha ovoz bilan qabul qilinadi?,,SHIRKAT,,,true,false
+q083,b09,kop_modda,uz-Latn,Mulkdorlar umumiy yig'ilishining qarori ustidan qanday tartibda shikoyat qilinadi?,,SHIRKAT|FPK,,,true,false
+q084,b09,faktik,uz-Latn,Shirkatning taftish komissiyasi qanday vazifalarni bajaradi?,,SHIRKAT,,,true,false
+q085,b09,ozgargan,uz-Latn,Ko'p kvartirali uylarda shirkatlar o'rniga boshqaruvchi kompaniyalar joriy etilganmi?,,KKUB|SHIRKAT,,,true,false
+q086,b09,til,uz-Cyrl,Турар жойни ижарага бериш шартномаси қандай шаклда тузилади?,,FK,,,true,false
+q087,b09,javobsiz,uz-Latn,Qo'shnim yaxshi odammi yoki yo'qmi?,NO_ANSWER,,,,false,true
+q088,b09,faktik,uz-Latn,Ko'p kvartirali uyga tutash hududni obodonlashtirish kimning zimmasida?,,SHIRKAT,,,true,false
+q089,b09,faktik,uz-Latn,Lift xizmati uchun to'lov birinchi qavat aholisidan ham undiriladimi?,,KOMMUNAL_QOIDA,,,true,false
+q090,b09,raqamlar,uz-Latn,Kommunal tashkilotga yozilgan shikoyat necha kun ichida ko'rib chiqilishi kerak?,,MUROJAAT,,,true,false
+q091,b10,kop_modda,uz-Latn,Voyaga yetmagan bola ro'yxatda turgan kvartirani sotish uchun qanday ruxsat olinadi?,,FK|OILA,,,true,false
+q092,b10,noaniq,uz-Latn,ijarachi 3 oy pul bermay qochib ketdi endi nima qilaman,,FK,,,true,false
+q093,b10,faktik,uz-Latn,Avariya holatida mulkdor ruxsatisiz kvartiraga kim kirishi mumkin?,,UJK,,,true,false
+q094,b10,ozgargan,uz-Latn,Uy-joy qurilish kooperativlari to'g'risidagi eski normalar hozir ham qo'llanadimi?,,UJK,,,true,false
+q095,b10,til,uz-Cyrl,Ичимлик суви таъминоти узилганда истеъмолчи қаерга мурожаат қилади?,,SUV,,,true,false
+q096,b10,javobsiz,ru,Какой цвет лифта установлен законом?,NO_ANSWER,,,,false,true
+q097,b10,faktik,uz-Latn,Isitish mavsumi qachon boshlanadi va qachon tugaydi?,,ISSIQLIK,,,true,false
+q098,b10,raqamlar,uz-Latn,Kapital ta'mirlash jamg'armasiga majburiy ajratmalar miqdori qanday belgilanadi?,,SHIRKAT,,,true,false
+q099,b10,kop_modda,uz-Latn,Kommunal qarz sud orqali qanday undiriladi va da'vo muddati qancha?,,FK|FPK,,,true,false
+q100,b10,faktik,uz-Latn,Ichimlik suvi sifati uchun kim javobgar hisoblanadi?,,SUV,,,true,false
