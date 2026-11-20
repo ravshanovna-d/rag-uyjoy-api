@@ -190,6 +190,8 @@ PAGE = ("<!doctype html><meta charset=utf-8><meta name=viewport content='width=d
 
 def app(environ, start_response):
     method, path = environ["REQUEST_METHOD"], environ.get("PATH_INFO", "/")
+    if not path.startswith("/v1/"):  # Vercel may rewrite "/" to "/api/index"
+        path = "/"
 
     def out(code, obj, ctype="application/json; charset=utf-8"):
         data = obj if isinstance(obj, bytes) else json.dumps(obj, ensure_ascii=False).encode("utf-8")
