@@ -180,7 +180,64 @@ class H(BaseHTTPRequestHandler):
         pass
 
 
-handler = H  # Vercel entrypoint
+
+# ---- WSGI entrypoint (Vercel looks for `app`) ----
+PAGE = ("<!doctype html><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'>"
+        "<title>RAG Uy-joy API</title><body style='font:16px system-ui;max-width:640px;margin:40px auto;padding:0 16px'>"
+        "<h1>RAG Uy-joy API is running &#9989;</h1><p>This is the demo/mock API (synthetic answers, not real law text).</p>"
+        "<ul><li><a href='/v1/health'>/v1/health</a> &rarr; status</li></ul></body>").encode()
+
+
+def app(environ, start_response):
+    method, path = environ["REQUEST_METHOD"], environ.get("PATH_INFO", "/")
+
+    def out(code, obj, ctype="application/json; charset=utf-8"):
+        data = obj if isinstance(obj, bytes) else json.dumps(obj, ensure_ascii=False).encode("utf-8")
+        start_response(code, [("Content-Type", ctype), ("Content-Length", str(len(data)))])
+        return [data]
+
+    if method == "GET" and path in ("/", "/index.html"):
+        return out("200 OK", PAGE, "text/html; charset=utf-8")
+    if method == "GET" and path == "/v1/health":
+        return out("200 OK", {"status": "ok"})
+    if environ.get("HTTP_AUTHORIZATION") != f"Bearer {API_KEY}":
+        return out("401 Unauthorized", {"error": {"code": "UNAUTHORIZED", "message": "bad API key"}})
+    if method == "GET" and path == "/v1/meta":
+        return out("200 OK", SYSTEM)
+    m = re.fullmatch(r"/v1/rag/batch/(.+)", path)
+    if method == "GET" and m and m.group(1) in STORE:
+        return out("200 OK", STORE[m.group(1)][1])
+    if method == "POST":
+        try:
+            n = int(environ.get("CONTENT_LENGTH") or 0)
+            b = json.loads(environ["wsgi.input"].read(n).decode("utf-8"))
+        except Exception:
+            return out("400 Bad Request", {"error": {"code": "BAD_JSON"}})
+        k = (b.get("options") or {}).get("top_k", 5)
+        if path == "/v1/rag/query":
+            return out("200 OK", answer_item({"id": "single", **b}, k))
+        if path == "/v1/rag/batch":
+            err = validate(b)
+            if err:
+                return out("400 Bad Request", {"error": {"code": "VALIDATION_ERROR", "message": err}})
+            h = hashlib.sha256(json.dumps(b, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
+            if b["batch_id"] in STORE:
+                if STORE[b["batch_id"]][0] != h:
+                    return out("409 Conflict", {"error": {"code": "BATCH_ID_CONFLICT"}})
+                return out("200 OK", STORE[b["batch_id"]][1])
+            now = datetime.now(TZ)
+            res = [answer_item(i, k) for i in b["items"]]
+            resp = {"run_id": b["run_id"], "batch_id": b["batch_id"], "status": "completed", "system": SYSTEM,
+                    "timing": {"received_at": now.isoformat(timespec="seconds"),
+                               "completed_at": now.isoformat(timespec="seconds"),
+                               "total_ms": sum(r["timing"]["total_ms"] for r in res)},
+                    "summary": {"total": len(res), "ok": sum(r["status"] == "ok" for r in res),
+                                "no_answer": sum(r["status"] == "no_answer" for r in res), "error": 0},
+                    "results": res}
+            STORE[b["batch_id"]] = (h, resp)
+            return out("200 OK", resp)
+    return out("404 Not Found", {"error": {"code": "NOT_FOUND"}})
+
 
 
 if __name__ == "__main__":
