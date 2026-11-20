@@ -190,8 +190,10 @@ PAGE = ("<!doctype html><meta charset=utf-8><meta name=viewport content='width=d
 
 def app(environ, start_response):
     method, path = environ["REQUEST_METHOD"], environ.get("PATH_INFO", "/")
-    if not path.startswith("/v1/"):  # Vercel may rewrite "/" to "/api/index"
-        path = "/"
+    if not path.startswith("/v1/"):  # Vercel rewrites every URL to /api/index?p=<original path>
+        from urllib.parse import parse_qs
+        p = (parse_qs(environ.get("QUERY_STRING", "")).get("p") or [""])[0].strip("/")
+        path = "/" + p if p.startswith("v1/") else "/"
 
     def out(code, obj, ctype="application/json; charset=utf-8"):
         data = obj if isinstance(obj, bytes) else json.dumps(obj, ensure_ascii=False).encode("utf-8")
